@@ -1,4 +1,4 @@
-/* 
+
 //EXERCICI 1 
 console.log('Hola Mundo');
 
@@ -42,9 +42,9 @@ const arrOficina = ['taula', 'cadira', 'ordinador', 'llibreta'];
 let resultat = "";
 
 for (i = 0; i < arrOficina.length; i++) {
-    resultat += ("L'objecte " + arrOficina[i] + " és a la posició " + i + "<br>"); //No entenc perque no em funciona el codi "\n" de nova linea
+    resultat += ("L'objecte " + arrOficina[i] + " és a la posició " + i + "<br>"); //No entenc perque no em funciona el codi "\n" de nova linea aixi que utlitzo <br>
 }
-document.getElementById("text").innerHTML = resultat;*/
+document.getElementById("text").innerHTML = resultat;
 
 //EXERCICI 8
 
