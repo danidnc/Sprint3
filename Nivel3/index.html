@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 3. Nivel 3. Itinerari React</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="calcBox">
+            <div class="col-4"> </div>
+            <div class="col-4 border bg-light bg-color secondary mt-5">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="text-end bg-dark text-light" id="pantalla">0</td>
+                        </tr>
+                        <tr>
+
+                            <td class="text-center" id="tecla7" onmousedown="capturaTecla('7')">7</td>
+                            <td class="text-center" id="tecla8" onmousedown="capturaTecla('8')">8</td>
+                            <td class="text-center" id="tecla9" onmousedown="capturaTecla('9')">9</td>
+                            <td class="text-center" id="sumar" onmousedown="sumar()">+</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center" id="tecla4" onmousedown="capturaTecla('4')">4</td>
+                            <td class="text-center" id="tecla5" onmousedown="capturaTecla('5')">5</td>
+                            <td class="text-center" id="tecla6" onmousedown="capturaTecla('6')">6</td>
+                            <td class="text-center" id="restar" onmousedown="restar()">-</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center" id="tecla1" onmousedown="capturaTecla('1')">1</td>
+                            <td class="text-center" id="tecla2" onmousedown="capturaTecla('2')">2</td>
+                            <td class="text-center" id="tecla3" onmousedown="capturaTecla('3')">3</td>
+                            <td class="text-center" id="multiplicar" onmousedown="multiplicar()">*</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-center" id="tecla0" onmousedown="capturaTecla('0')">0</td>
+                            <td class="text-center" id="dividir" onmousedown="dividir()">/</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center" id="limpiar" onmousedown="capturaTecla('C')">C</td>
+
+                            <td class="text-center" id="decimal" onmousedown="capturaTecla('.')">.</td>
+                            <td class="text-center" id="igual" onmousedown="calcular()">=</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+    </div>
+</body>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+</html>
