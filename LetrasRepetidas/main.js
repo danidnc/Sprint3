@@ -44,3 +44,10 @@ function cuentaLetras(letra) {
 }
 console.log(nuevoArray);// impresión del array letra:repetición
 
+//EJERCICIO 4
+console.log("Ejercicio 4.");
+
+const arrApellido = ['N', 'A', 'V', 'A', 'R', 'R', 'O'];
+let arrFullName = arrNombre.concat(" ", arrApellido);
+console.log(arrFullName);
+
