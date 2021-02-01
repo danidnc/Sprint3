@@ -1,5 +1,6 @@
 //EJERICIO 1
-const arrNombre = ['D', 'A', 'N', '1', 'E', 'L']; //inicializa array con el nombre
+console.log("Ejercicio 1.");
+const arrNombre = ['D', 'A', 'N', 'I', 'E', 'L']; //inicializa array con el nombre
 
 for (i = 0; i < arrNombre.length; i++) { //bucle que imprime por consola posición y valor del array
     console.log(`Letra en posición ${i} -> ${arrNombre[i]}`)
@@ -7,6 +8,7 @@ for (i = 0; i < arrNombre.length; i++) { //bucle que imprime por consola posici�
 
 //EJERCICIO 2
 
+console.log("Ejercicio 2.");
 let nombre = arrNombre.join(""); //asigna el valor del array en una variable, sin separadores
 console.log("Partiremos del nombre : " + nombre); //imprime por consola el nombre a procesar
 
@@ -22,4 +24,23 @@ function comprobarArray(valor, indice, arrNombre) { //la función recibe 3 pará
         console.log(`He encontrado una consonante : ${valor}`); //imprime el valor original
     }
 }
+
+//EJERCICIO 3
+console.log("Ejercicio 3.");
+
+let contador = 0; //variable que almacenará las repeticiones
+let nuevoArray = []; //array que almacena letra y número de repeticiones
+let arrMap = arrNombre.map(cuentaLetras); //llamada al método map 
+
+function cuentaLetras(letra) {
+    for (i = 0; i < arrNombre.length; i++) { //bucle para recorrer array originial
+        if (letra == arrNombre[i]) { //busca coincidencia
+            contador++; //incrementa contador en caso de coincidencia
+        }
+    }
+    console.log(`La letra ${letra} aparece ${contador} veces en el nombre ${nombre}`); //imprime por consola resultado
+    nuevoArray.push(letra + " : " + contador); //array para almacenar letra y repetición
+    contador = 0; //reinicialización del contador de repetición
+}
+console.log(nuevoArray);// impresión del array letra:repetición
 
