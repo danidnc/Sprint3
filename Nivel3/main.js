@@ -6,7 +6,7 @@ function capturaTecla(valor) { //valora parametro recibido
     if ((valor == 'C')) {
         limpiar(); //invoca limpiar pantalla
     } else {
-        if ((valor == '0') && (numeroPantalla == "0")) { //controla que no entren 0 en primera posicion
+        if ((valor == 0) && (numeroPantalla == 0)) { //controla que no entren 0 en primera posicion
             limpiar();
         } else {
             numeroPantalla += valor; //concatena valor recibido al string mostrado en pantalla
